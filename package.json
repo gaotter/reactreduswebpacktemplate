@@ -1,0 +1,22 @@
+{
+  "name": "reactrte",
+  "version": "1.0.0",
+  "description": "A template with ReactJS Redux using Webpack. Starts as a learning experimanet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morten GM Ottersen",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "react": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-ie": "^6.7.0"
+  }
+}
