@@ -1,20 +1,23 @@
 const path = require('path');
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
  context: __dirname + "/",
 
  entry: {
-     app: "./app/js/app.js"
+     app: "./app/index.js"
  
  },
 
  output: {
-   filename: "[name].js",
-   path: __dirname + "/wwwroot/js",
-   publicPath: '/js/'
+   filename: "js/[name].js",
+   path: __dirname + "/wwwroot"
  },
  plugins: [
-     new CommonsChunkPlugin("commons") // Gives suport for multi page.
+     new CommonsChunkPlugin("commons"), // Gives suport for multi page.,
+     new HtmlWebpackPlugin({
+         template: './app/index.html'
+     })
  ],
 
  resolve: {

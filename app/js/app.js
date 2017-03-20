@@ -1,13 +1,16 @@
-import Componant from 'react';
+import React, { Component } from 'react';
 
-class HelloWorld extends Componant {
-    constructor(props) {
-        super(props); 
-    }
+class App extends Component {
+     constructor(props) {
+         super(props);
+     }
 
     render() {
         return (
-            <div>Hello World</div>
+        <div>Hello world</div>
         );
     }
 }
+
+export default App;
+
