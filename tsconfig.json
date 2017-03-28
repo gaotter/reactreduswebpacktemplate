@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+      "baseUrl": ".",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx":"react",
+      "paths": {
+      // Fix "Duplicate identifier" errors caused by multiple dependencies fetching their own copies of type definitions.
+      // We tell TypeScript which type definitions module to treat as the canonical one (instead of combining all of them).
+      "history": ["./node_modules/@types/history/index"],
+      "react": ["./node_modules/@types/react/index"]
+    }
+  },
+  "exclude": [
+      "./wwwroot",
+      "node_modules/*"
+  ]
+}
